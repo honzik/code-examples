@@ -1,4 +1,4 @@
-# Kurzor website code examples
+# Kurzor Front-end Coding Style Examples
 
 This repository contains some examples of our website-related coding style regarding front-end stuff - LESS and JS.
 
