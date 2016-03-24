@@ -110,8 +110,7 @@
                     lang: this.options.lang,
                 },
                 type: 'POST',
-                success: function(data, status) {
-                    //            console.log(data, status); // TODO:
+                success: function(data, status) {                    
                     self.options.editor_after_load_published(self);
                 },
                 error: function(jqxhr, status, error) {
@@ -134,8 +133,7 @@
                     lang: this.options.lang,
                 },
                 type: 'POST',
-                success: function(data, status) {
-                    //            console.log(data, status); // TODO:
+                success: function(data, status) {                    
                     self.json_data = (typeof self.options.modify_data_after_load === 'function') ? self.options.modify_data_after_load(data) : data;
                     self.initializeHtml();
                     self.spinner(false);
@@ -162,7 +160,6 @@
                 },
                 type: 'POST',
                 success: function(data, status) {
-                    //           console.log(data, status); // TODO:
                     self.showMessage('Data was saved.');
                     self.options.editor_after_save(self);
                 },
@@ -185,8 +182,7 @@
                     blob: JSON.stringify(data)
                 },
                 type: 'POST',
-                success: function(data, status) {
-                    //           console.log(data, status); // TODO:
+                success: function(data, status) {            
                     self.showMessage('Data was published.');
                     self.options.editor_after_publish(self);
                 },
